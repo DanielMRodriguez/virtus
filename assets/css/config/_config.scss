@@ -1,0 +1,127 @@
+/*!
+Theme Name: virtus
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: virtus
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+virtus is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+body {
+    background: #fff;
+    color: #9397a3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 52px;
+    position: relative;
+
+    @media (max-width:700px) {
+        padding-top: 0;
+    }
+}
+
+$azul: #0569CC;
+$blanco: white;
+$negro: black;
+
+$open:'Open Sans',
+sans-serif;
+$osw:'Oswald',
+sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Oswald', sans-serif;
+    color: $azul;
+    margin: 0 0 1.5rem 0;
+    font-weight: 500;
+}
+
+.ctr,
+textarea,
+select {
+    padding: 10px 10px 10px 20px;
+    border: 1px solid rgba($color: #000000, $alpha: .2);
+
+    &::placeholder {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+hr {
+    margin: 30px 0;
+    border-color: $azul;
+
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+article p {
+    font-size: 18px;
+    font-family: $open;
+    color: #7e7e7f;
+}
+
+.wp-block-embed {
+
+    margin: 40px 0;
+
+    .wp-block-embed__wrapper {
+        text-align: center;
+    }
+
+    iframe {}
+}

@@ -1,0 +1,665 @@
+@import "./config/_normalize.scss";
+@import "./config/_config.scss";
+@import "./config/_compontents.scss";
+
+.container-full {
+    width: 100%;
+    padding: 0 25px;
+    margin: auto;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1450px;
+    padding: 0 25px;
+    margin: auto;
+}
+
+.container-full .container {
+    @media (max-width:850px) {
+        padding: 0;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+#hero {
+    height: 600px;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba($color: #000000, $alpha: .4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#hero-wrapper {
+    position: relative;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.home-title__content,
+.hero-elemento {
+    text-align: center;
+
+    .home-title,
+    .hero-title {
+        color: $blanco;
+        font-size: 60px;
+        letter-spacing: 2px;
+
+        span {
+            color: $azul
+        }
+
+        @media (max-width:700px) {
+            font-size: 40px;
+        }
+    }
+
+    .hero-title {
+        padding-bottom: 20px;
+        border-bottom: 5px solid $azul;
+    }
+}
+
+p {
+    word-wrap: break-word;
+}
+
+button,
+input[type=submit] {
+    background-color: $azul;
+    color: $blanco;
+    font-family: $open;
+    font-weight: bold;
+    min-width: 150px;
+    min-height: 45px;
+    padding: 18px 30px;
+    border: 1px solid $azul;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.carousel-item {
+    padding: 20px 0;
+}
+
+.item-title,
+.item-text,
+.item-image {
+    padding: 30px 0;
+}
+
+.item-title {
+    padding: 30px 40px;
+    position: relative;
+}
+
+.flecha-left,
+.flecha-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-arrow {
+    width: 19px;
+    height: 19px;
+    border-bottom: 5px solid $azul;
+    border-left: 5px solid $azul;
+    transform: rotate(45deg);
+}
+
+#right-arrow {
+    width: 19px;
+    height: 19px;
+    border-bottom: 5px solid $azul;
+    border-left: 5px solid $azul;
+    transform: rotate(225deg);
+}
+
+
+.flecha-left {
+    position: absolute;
+    width: 40px;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+
+    // @media (max-width:700px) {
+    //     left: 0;
+    // }
+
+}
+
+
+.flecha-right {
+    position: absolute;
+    width: 40px;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+
+}
+
+.item-title {
+    width: 40%;
+
+    h2 {
+        color: $negro;
+        font-size: 40px;
+        margin: 0 0 20px 0;
+        z-index: 0;
+        display: inline-block;
+        position: relative;
+
+        span {
+            color: $azul;
+        }
+    }
+
+    button {
+        display: block;
+
+        @media (max-width:700px) {
+            margin: auto;
+        }
+    }
+
+    @media (max-width:700px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.item-text {
+    width: 60%;
+
+    p {
+        font-size: 20px;
+    }
+
+    @media (max-width:700px) {
+        width: 100%;
+    }
+}
+
+.item-image {
+    img {
+        width: 100%;
+    }
+}
+
+
+.solicita-content {
+    width: 100%;
+    padding: 40px 0;
+
+    h3 {
+        font-size: 40px;
+        color: $negro;
+        text-transform: uppercase;
+        text-align: center;
+
+        span {
+            color: $azul
+        }
+    }
+
+    @media (max-width:700px) {
+        h3 {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.form-home {}
+
+.form-home-up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+    input {
+        width: 32%;
+    }
+
+    @media (max-width:700px) {
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#solicita {
+    margin-bottom: 80px;
+}
+
+.form-home-down {
+    width: 100%;
+    margin-bottom: 30px;
+
+    textarea {
+        width: 100%;
+    }
+}
+
+
+#conoce-mas {
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.conoce-content {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+
+
+    h3 {
+        font-size: 50px;
+        color: $blanco;
+
+        letter-spacing: 1px;
+    }
+}
+
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.content-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.content-page {
+    aside {
+        width: 30%;
+        padding: 0 30px;
+
+        @media (max-width:700px) {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    article {
+        width: 70%;
+        padding: 0 30px;
+
+        @media (max-width:700px) {
+            width: 100%;
+            margin-top: 40px;
+            padding: 0;
+
+        }
+
+        .title-proyecto {
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+}
+
+.list-terrenos {
+    list-style: none;
+    width: 100%;
+
+    @media (max-width:1250px) {
+        padding-left: 0;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+        background-color: #E2E2E2;
+
+        border-bottom: 1px solid black;
+
+        a {
+            padding: 20px 0;
+            color: #39393F;
+            display: block;
+            font-family: $osw;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: line-through solid $azul 2px;
+
+            }
+
+            &.active {
+                text-decoration: line-through solid $azul 2px;
+            }
+        }
+    }
+
+    li:last-child {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+
+    @media (max-width:700px) {
+
+        padding: 0;
+        margin: auto;
+
+    }
+}
+
+.wp-block-image img {
+    height: auto;
+}
+
+.ctr {
+    width: 100%;
+}
+
+.form-home div {
+    margin-bottom: 15px;
+}
+
+.detalles-item {
+    img {
+        width: 15px;
+    }
+
+    p {
+        margin: 0 0 15px 0;
+
+
+        span {
+            color: $azul;
+            font-weight: bold;
+        }
+    }
+}
+
+#text-footer-proyecto {
+    .img-text {
+        width: 40%;
+        padding: 15px;
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+
+    .detalles {
+        width: 60%;
+        padding: 15px;
+    }
+
+    @media (max-width:1000px) {
+        .img-text {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .detalles {
+            width: 100%;
+
+        }
+    }
+}
+
+.wp-block-button {
+    margin: 35px 0;
+    margin-bottom: 0;
+}
+
+
+.footer-content-form {
+    width: 100%;
+    margin-bottom: 20px;
+
+    input[type=submit] {
+        background-color: $azul;
+        color: $blanco;
+        font-family: $open;
+        font-weight: bold;
+        min-width: initial;
+        min-height: initial;
+        padding: 8px 11px;
+        border: 1px solid $azul;
+        cursor: pointer;
+        max-width: 100%;
+    }
+
+    .ctr-footer {
+        width: 100%;
+        border: 1px solid transparent;
+        border-bottom: 1px solid white;
+        background: transparent;
+        color: white;
+        padding-bottom: 15px;
+
+        &::placeholder {
+            color: white
+        }
+    }
+}
+
+
+.contacto-slider {
+    padding: 40px 0;
+    position: relative;
+
+    .content {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 70px;
+        position: relative;
+
+        h2 {
+            color: black;
+            font-size: 40px;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width:700px) {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    .img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width:700px) {
+            width: 100%;
+            padding: 40px;
+        }
+    }
+
+    .arrow-left {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 20px;
+        width: 25px;
+
+        div.cont {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .arrow-prev {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-bottom: 3px solid $azul;
+                border-left: 3px solid $azul;
+                transform: rotate(45deg);
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        width: 25px;
+
+        div.cont {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .arrow-next {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-bottom: 3px solid $azul;
+                border-left: 3px solid $azul;
+                transform: rotate(225deg);
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+
+    }
+}
+
+select {
+    font-weight: bold;
+    color: rgb(117, 117, 117);
+}
+
+
+.amenidades {
+    background-color: #F0F0F0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+    .amenidades-content {
+        .amenidades-title {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .amenidades-text {
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .subtitle-amenidad {
+        font-size: 20px;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+
+.carousel-container-a {
+    overflow: hidden;
+}
+
+
+.terreno-images {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+
+    .terreno-images-content {
+        .subtitle-terreno {
+            font-size: 20px;
+            margin: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+
+.wp-block-button__link {
+    font-weight: 700;
+}
+
+.contacto-slider {
+    overflow: hidden;
+}
+
+.swiper-amenidades {
+    overflow: hidden;
+}
+
+.swiper-terreno {
+    overflow: hidden;
+}
+
+iframe {
+    max-width: 100% !important;
+}

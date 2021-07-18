@@ -1,0 +1,113 @@
+header {
+    background-color: #101216;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+
+    .header-content {
+        align-items: center;
+
+        .header-widget {
+            margin-left: auto;
+            display: flex;
+        }
+
+        .widget-redes-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .widget-phone {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+
+            svg {
+                width: 30px;
+                margin-right: 10px;
+
+                path {
+                    fill: white;
+                }
+            }
+
+            p {
+                color: white
+            }
+        }
+
+        .widget-email {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+
+            svg {
+                width: 30px;
+                margin-right: 10px;
+
+                path {
+                    fill: $azul;
+                }
+            }
+
+            p {
+                font-weight: 300;
+                color: $azul;
+                font-family: $osw;
+            }
+        }
+    }
+
+    @media (max-width:700px) {
+        display: none;
+    }
+}
+
+
+.site-logo {
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+.widget-redes-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .widget-redes-item {
+        margin: 5px 10px;
+
+        a {
+            display: block;
+            line-height: 25px;
+            height: 25px;
+
+            .svg-redes {
+                max-width: 25px;
+                height: 25px;
+
+                path {
+                    fill: white
+                }
+            }
+
+            &:hover {
+                .svg-redes {
+                    max-width: 25px;
+                    height: 25px;
+
+                    path {
+                        fill: $azul
+                    }
+                }
+            }
+        }
+
+    }
+}
