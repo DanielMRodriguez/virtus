@@ -77,10 +77,10 @@ menu.addEventListener("click", () => {
     if (toggleMenu) {
         menu.classList.remove("open");
         toggleMenu = false;
-        $("#menu-movil-container").removeClass('show-menu ');
+        document.getElementById('menu-movil-container').classList.remove('show-menu');
     } else {
         menu.classList.add("open");
-        $("#menu-movil-container").addClass('show-menu ');
+        document.getElementById("menu-movil-container").classList.add('show-menu');
         toggleMenu = true;
         if (toggleNoAni) {
             toggleNoAni = false;
