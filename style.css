@@ -1530,3 +1530,408 @@ select {
 iframe {
   max-width: 100% !important;
 }
+
+
+/* casas */
+
+.main-casa{
+background-color: #f0f0f0;
+padding-top:35px ;
+padding-bottom: 35px;
+}
+
+.main-casas__container{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.main-casas___content,.main-casas__image{
+  width: 50%;
+  padding: 15px;
+}
+.main-casas___content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-casas__image{
+  padding-left: 40px;
+}
+.main-casas__image img{
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53); 
+box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53);
+width: 100%;
+}
+
+.main-casas___title{
+  text-align: center;
+  font-size: 45px;
+}
+.main-casas___paragraph{
+  color:#393939;
+  font-size:29px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.main-casas___text{
+  text-align: center;
+}
+
+.loop-casas{
+  background-color: white;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+
+.grid-casas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.casa-item{
+  width: 380px;
+  margin: 20px;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+}
+.casa-item__button{
+  display: block;
+  margin-top: auto;
+}
+.casa-item__container{
+  margin-bottom: 15px;
+}
+.casa-item__container img{
+  width:100%;
+}
+.casa-item__title{
+  color:#363636;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 27px;
+  text-align: center;
+}
+
+
+/* casa individual */
+
+.casa_title__container{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.casa__title{
+  text-align: center;
+  font-size: 49px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.casa__title-fraccionamiento{
+  text-align: center;
+  font-size: 49px;
+  text-transform: uppercase;
+  color:black
+}
+.content-casa__container{
+  margin-left:-25px;
+  margin-right:-25px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color:#f0f0f0;
+  margin-bottom: 40px;
+}
+.content-casa__image,.content-casa__text{
+  width:50%
+}
+
+.content-casa__text{
+  padding: 30px;
+}
+
+.content-casa__image{
+  padding-top: 30px;
+}
+.content-casa__image img{
+  width: 100%;
+  margin-bottom: -35px;
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53); 
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53);
+}
+.content-casa__paragraph{
+ color:#393939;
+ font-size: 22px;
+}
+
+
+.content-casa__text ul{
+  color:#393939 !important;
+  font-size: 22px !important;
+}
+
+.caracteristicas__container{
+  padding-top: 45px;
+  padding-bottom: 45px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.caracteristicas__item{
+  width: 200px;
+  margin: 25px;
+  text-align:center !important;
+}
+
+
+.caracteristicas__item img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.caracteristicas__item h4{
+  color: black;
+  font-size: 30px;
+  line-height: 42px;
+
+}
+.fraccionamiento_seccion__container{
+  width: calc(100% - 24px);
+  background-color:#f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -25px;
+  padding: 25px 0 20px 20px;
+}
+
+.fraccionamiento_seccion__text{
+  width: 60%;
+  padding-left: 45px;
+  font-size: 20px;
+}
+
+.fraccionamiento_seccion__container{
+  color: #393939 !important;
+
+}
+.fraccionamiento_seccion__image{
+  width:40%
+}
+
+.fraccionamiento_seccion__image img{
+  display: block;
+  margin-right: -40px;
+  margin-left: auto;
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53); 
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53);
+}
+
+.imagenes__container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.imagenes__imagen{
+  width: 33%;
+  padding:25px;
+}
+
+.imagenes__imagen img{
+  width: 100%;
+}
+
+
+
+.tourvirtual-seccion{
+  background-color:#f0f0f0;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  text-align:center;
+}
+.tourvirtual-title__seccion{
+  padding-bottom: 45px;
+  padding-top: 45px;
+
+}
+
+.tourvirtual__title{
+  text-align: center;
+    font-size: 50px;
+}
+.line-tour{
+  height: 5px;
+  background-color: black;
+}
+
+.button-seccion{
+  text-align: center !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.fraccionamiento-abajo__image,.fraccionamiento-abajo__text{
+  width:50%
+}
+.fraccionamiento-abajo__text
+{
+  display:flex;
+  align-items:center;
+
+}
+.fraccionamiento-abajo-content
+{
+  background-color:#f0f0f0;
+  width: 100%;
+  padding:40px 20px 40px 20px;
+  /* text-align: center !important ; */
+  padding-left: 45px;
+}
+.fraccionamiento-abajo-content h2{
+  font-size: 40px;
+}
+
+
+.fraccionamiento-abajo-content ul{
+  font-size: 25px;
+  line-height: 30px;
+  color:black
+}
+
+.fraccionamiento-abajo__image img{
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53); 
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53);
+  width:100%;
+  position: relative;
+  z-index:10
+}
+.fraccionamiento-abajo__container{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:-25px;
+  margin-right: -25px;
+}
+
+.ultima-seccion{
+  text-align: center !important;
+  padding:40px 25px;
+}
+
+
+.ultima-seccion__title h2{
+  font-size: 50px;
+  margin-bottom:40px ;
+}
+
+.ultima-seccion-images{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.ultima-seccion__image{
+  width:30%
+}
+
+.ultima-seccion__image img{
+  width: 100%;
+   margin-bottom: 20px;
+   display: block;
+}
+.fraccionamiento_seccion__container,.content-casa__container,
+.caracteristicas__container,
+.imagenes__container,
+.fraccionamiento-abajo__container{
+  max-width:1550px;
+ 
+}
+
+@media(min-width: 1550px){
+  .fraccionamiento_seccion__container,.content-casa__container,
+.caracteristicas__container,
+.imagenes__container,
+.fraccionamiento-abajo__container{
+ margin:auto;
+ 
+}
+
+}
+
+@media (max-width:768px){
+  .main-casas__image,.main-casas___content,
+  .content-casa__text,.content-casa__image,
+  .fraccionamiento_seccion__text,
+  .fraccionamiento_seccion__image
+  ,.fraccionamiento-abajo__image,.fraccionamiento-abajo__text{
+    width: 100%;
+    
+  }
+.main-casas__container{
+  margin-left: -25px;
+  margin-right: -25px;
+}
+  .main-casas__image{
+    order:1;
+    padding: 0;
+  
+  }
+  .main-casas___content{
+    order:2;
+    padding: 25px;
+  }
+
+  .casa__title,.casa__title-fraccionamiento{
+    font-size:30px
+  }
+  
+  .content-casa__image img{
+    margin-bottom: 25px;
+  }
+
+  .fraccionamiento_seccion__container{
+    background-color:#f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -25px;
+    padding:0;
+    width:initial
+  }
+
+  .fraccionamiento_seccion__image{
+    order:1;
+  }
+  .fraccionamiento_seccion__image img
+  {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin:0;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53); 
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.53);
+  }
+  .fraccionamiento_seccion__text{
+    order:2;
+    padding:25px;
+  }
+
+  .imagenes__imagen{
+    width: 100%;
+  }
+
+  .ultima-seccion__image
+  {
+    width:100%
+  }
+    .fraccionamiento-abajo-content
+  {
+  
+    padding-left: 0;
+  }
+
+}
+

@@ -718,3 +718,40 @@ function slider_cpt_create()
 
 	register_post_type('sliders', $args); /* Registramos y a funcionar */
 }
+
+
+
+
+/*
+* Define a constant path to our single template folder
+*/
+
+ 
+/**
+* Filter the single_template with our custom function
+*/
+add_filter('single_template', 'my_single_template');
+ 
+/**
+* Single template function which will choose our template
+*/
+function my_single_template($single) {
+	global $wp_query, $post;
+	$SINGLE_PATH =  TEMPLATEPATH . '/single';
+	/**
+	* Checks for single template by category
+	* Check by category slug and ID
+	*/
+	foreach((array)get_the_category() as $cat) {
+		
+		if(file_exists($SINGLE_PATH . '/single-cat-' . $cat->slug . '.php')){
+			return $SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
+		}
+		elseif(file_exists($SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php')){
+			return $SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php';
+		}
+		else{
+			return ;
+		}
+	}
+}
