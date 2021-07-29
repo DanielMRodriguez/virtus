@@ -57,7 +57,7 @@ while (have_posts()) :
                         }
                     }
                     $args  = array(
-                        'category'        => 'proyectos',
+                        'category_name'        => 'proyectos',
                         'orderby'         => 'post_date',
                         'order'           => 'DESC'
                     );
