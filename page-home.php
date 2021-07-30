@@ -116,6 +116,69 @@ while (have_posts()) {
 </div>
 
 <div class="container">
+    <div class="title__section">
+        <h2>Casas en venta</h2>
+    </div>
+    <div class="carousel-container-a">
+        <div class="swiper-wrapper">
+            <?php
+        
+            $args  = array(
+                'category_name'   => 'casas',
+                'orderby'         => 'post_date',
+                'order'           => 'DESC'
+            );
+            $posts = get_posts($args);
+
+            if ($posts) : ?>
+
+
+            <?php foreach ($posts as $post) : ?>
+
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="item-title">
+
+                        <h2>
+                            <div class="flecha-left" onclick="prev()">
+                                <div id="left-arrow"></div>
+                            </div>
+                            <?php echo transform_title($post->post_title); ?>
+                            <div class="flecha-right" onclick="next()">
+                                <div id="right-arrow"></div>
+                            </div>
+                        </h2>
+                        <button onclick="window.location = '<?php echo get_permalink($post); ?>'">CONOCE
+                            MÁS</button>
+
+                    </div>
+                    <div class="item-text">
+                        <p>
+                            <?php echo $post->post_excerpt; ?>
+                        </p>
+                    </div>
+                    <div class="item-image" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>)">
+                        <!-- <img src="" alt="Rincon" /> -->
+                    </div>
+                </div>
+            </div>
+
+            <?php endforeach; ?>
+            <?php wp_reset_query(); ?>
+            <?php else : ?>
+            <h2>
+                Aún no hay proyectos
+            </h2>
+            <?php endif; ?>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="container">
  <div class="row content__antesform">
      <div class="antesform">
                 <h3 class="title__antesform">Somos Virtus Bienes Raíces</h3>

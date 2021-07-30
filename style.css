@@ -1935,3 +1935,11 @@ width: 100%;
 
 }
 
+
+.title__section h2{
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px auto;
+}
