@@ -167,7 +167,37 @@ while (have_posts()) :
 
 <?php endif; ?>
 
+<?php if(get_the_title( $ID_POST) == 'RINCÓN DE LOS ENCINOS'):?>
+    <div>
+        <h3 class="casa__title-fraccionamiento" style="margin-top:45px">
+        CASAS DISPONIBLES
+        </h3>
+    </div>
+<div class="container-full imagenes">
+    <div class="imagenes__container">
+        <div class="imagenes__imagen">
+            <img src="<?php echo the_field('casa_imagenes_1');?>" alt="alt">
+        </div>
 
+        <div class="imagenes__imagen">
+            <img src="<?php echo the_field('casa_imagenes_2');?>" alt="alt">
+        </div>
+
+        <div class="imagenes__imagen">
+            <img src="<?php echo the_field('casa_imagenes_3');?>" alt="alt">
+        </div>
+    </div>
+</div>
+<div class="container-full button-seccion">
+        <div class="">
+            <a href="https://virtusbienesraices.com/casa-con-oficina/">
+                <button>
+                VER CASAS
+                </button>
+            </a>
+        </div>
+</div>
+<?php endif;?>
 
 <?php
 
