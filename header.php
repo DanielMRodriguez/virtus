@@ -23,26 +23,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@300;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Virtus</title>
     <?php wp_head(); ?>
     <style>
-        .antesform{
-            display:block;
-            width:100%;
-            text-align:center;
-            padding:15px 10px;
+        .antesform {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 15px 10px;
         }
 
-            .content__antesform{
-                padding:55px 10px;
-            }
-        .title__antesform{
+        .content__antesform {
+            padding: 55px 10px;
+        }
+
+        .title__antesform {
             font-size: 40px;
             color: black;
             text-transform: uppercase;
@@ -54,32 +53,35 @@
 
 
 <body>
-    <div class="menu-icon-movil">
-        <div class="logo-movile-header">
-            <?php echo get_custom_logo(); ?>
-        </div>
-        <div class="menu-icon-right">
-            <div class="menuIconH" id="menuHamburguer">
-                <div class="menu__tap-1 no-ani"></div>
-                <div class="menu__tap-2 no-ani"></div>
-                <div class="menu__tap-3 no-ani"></div>
+    <?php if (!is_single(3101)) : ?>
+        <div class="menu-icon-movil">
+            <div class="logo-movile-header">
+                <?php echo get_custom_logo(); ?>
+            </div>
+            <div class="menu-icon-right">
+                <div class="menuIconH" id="menuHamburguer">
+                    <div class="menu__tap-1 no-ani"></div>
+                    <div class="menu__tap-2 no-ani"></div>
+                    <div class="menu__tap-3 no-ani"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="menu-movil-content" id="menu-movil-container">
+        <div class="menu-movil-content" id="menu-movil-container">
 
-        <?php
-        wp_nav_menu(
-            array(
-                'menu_id'        => 'primary-menu',
-                'menu_class'    => 'menu-movil-l',
-                'container'         => 'div',
-                'container_class' => 'menu-movil'
-            )
-        );
-        ?>
-    </div>
+            <?php
+            wp_nav_menu(
+                array(
+                    'menu_id'        => 'primary-menu',
+                    'menu_class'    => 'menu-movil-l',
+                    'container'         => 'div',
+                    'container_class' => 'menu-movil'
+                )
+            );
+            ?>
+        </div>
+    <?php endif; ?>
+
     <header class="container-full">
         <div class="container">
             <div class="row header-content">
@@ -102,9 +104,7 @@
 
 
                     <div class="widget-email">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                            style="enable-background: new 0 0 512 512" xml:space="preserve">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
                             <g>
                                 <g>
                                     <path d="M467,76H45C20.137,76,0,96.262,0,121v270c0,24.885,20.285,45,45,45h422c24.655,0,45-20.03,45-45V121
