@@ -17,12 +17,17 @@ get_header();
         </div>
     </div>
 </div>
-<div class="container-full">
+<div class="container-full" style="padding-top:45px">
+    <div>
+        <h3 class="casa__title-fraccionamiento" style="color:#0569CC">
+            Selecciona el fraccionamiento
+        </h3>
+    </div>
 
 </div>
 <div class="container-full loop-casas">
     <div class="loop-casas__container">
-        <div class="grid-casas">
+        <div class="grid-casas-fracs">
             <?php
             if (have_rows('fraccionamientos')) : ?>
             <?php while (have_rows('fraccionamientos')) : the_row();
@@ -39,7 +44,7 @@ get_header();
                 </div>
                 <a href="<?php echo $link ?>" class="casa-item__button">
                     <button>
-                        CONOCE MÁS
+                        VER CASAS
                     </button>
                 </a>
             </div>
