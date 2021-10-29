@@ -38,143 +38,147 @@
 
     <div id="site-generator"></div>
     <!-- #site-generator -->
+
+    <div class="privacidad__container">
+        <a href="https://virtusbienesraices.com/aviso-de-privacidad/" class="privacidad__link">Aviso de privacidad</a>
+    </div>
 </footer>
 <?php wp_footer(); ?>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-    const swiper = new Swiper('.carousel-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        effect: 'fade',
-        autoplay: {
-            delay: 3000,
-        },
-    });
+const swiper = new Swiper('.carousel-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+        delay: 3000,
+    },
+});
 
-    const swipera = new Swiper('.carousel-container-a', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-    });
-
-
-    const swipera2 = new Swiper('.carousel-container-a2', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-    });
+const swipera = new Swiper('.carousel-container-a', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+});
 
 
-
-    function next() {
-        swipera.slideNext();
-    }
-
-    function prev() {
-        swipera.slidePrev();
-    }
+const swipera2 = new Swiper('.carousel-container-a2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+});
 
 
-    function next2() {
-        swipera2.slideNext();
-    }
 
-    function prev2() {
-        swipera2.slidePrev();
-    }
+function next() {
+    swipera.slideNext();
+}
+
+function prev() {
+    swipera.slidePrev();
+}
 
 
-    let menu = document.getElementById("menuHamburguer");
-    let toggleMenu = false;
-    let toggleNoAni = true;
-    menu.addEventListener("click", () => {
-        if (toggleMenu) {
-            menu.classList.remove("open");
-            toggleMenu = false;
-            document.getElementById('menu-movil-container').classList.remove('show-menu');
-        } else {
-            menu.classList.add("open");
-            document.getElementById("menu-movil-container").classList.add('show-menu');
-            toggleMenu = true;
-            if (toggleNoAni) {
-                toggleNoAni = false;
-                menu.childNodes.forEach((e) => {
-                    if (e.nodeType == 1) {
-                        e.classList.remove("no-ani");
-                    }
-                });
-            }
+function next2() {
+    swipera2.slideNext();
+}
+
+function prev2() {
+    swipera2.slidePrev();
+}
+
+
+let menu = document.getElementById("menuHamburguer");
+let toggleMenu = false;
+let toggleNoAni = true;
+menu.addEventListener("click", () => {
+    if (toggleMenu) {
+        menu.classList.remove("open");
+        toggleMenu = false;
+        document.getElementById('menu-movil-container').classList.remove('show-menu');
+    } else {
+        menu.classList.add("open");
+        document.getElementById("menu-movil-container").classList.add('show-menu');
+        toggleMenu = true;
+        if (toggleNoAni) {
+            toggleNoAni = false;
+            menu.childNodes.forEach((e) => {
+                if (e.nodeType == 1) {
+                    e.classList.remove("no-ani");
+                }
+            });
         }
-    });
-
-
-    var amenidades = new Swiper('.swiper-amenidades', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 3,
-                spaceBetween: 40
-            }
-        }
-    });
-
-    var terrenoIma = new Swiper('.swiper-terreno', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 3,
-                spaceBetween: 40
-            }
-        }
-    });
-
-    var contacto = new Swiper('.contacto-slider', {
-        direction: 'horizontal',
-        loop: true,
-    });
-
-
-    function nextConta() {
-        contacto.slideNext();
     }
+});
 
-    function prevConta() {
-        contacto.slidePrev();
+
+var amenidades = new Swiper('.swiper-amenidades', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
     }
+});
+
+var terrenoIma = new Swiper('.swiper-terreno', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+    }
+});
+
+var contacto = new Swiper('.contacto-slider', {
+    direction: 'horizontal',
+    loop: true,
+});
+
+
+function nextConta() {
+    contacto.slideNext();
+}
+
+function prevConta() {
+    contacto.slidePrev();
+}
 </script>
 </body>
 

@@ -57,6 +57,27 @@ get_header();
     </div>
 </div>
 
+<div class="container">
+    <div class="row" style="padding-bottom: 75px;">
+        <div class="antesform">
+            <div class="solicita-content">
+                <h3>
+                    VENTAJAS DE COMPRAR UNA<br>
+                    <span>CASA EN PREVENTA</span>
+                </h3>
+            </div>
+
+        </div>
+        <div class="antesform">
+            <?php
+
+            echo the_field('video');
+            ?>
+
+        </div>
+    </div>
+</div>
+
 
 <?php
 
